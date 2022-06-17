@@ -15,6 +15,7 @@ public class Chest : Collectable
             // +5 pesos!
             GameManager.instance.ShowText("+" + pesosAmount + " pesos!", 25, 
              Color.yellow, transform.position, Vector3.up * 25, 1.5f);
+
             
         }
     }
