@@ -2570,9 +2570,10 @@ MonoBehaviour:
   - {fileID: -452822152, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   - {fileID: -1443120277, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   - {fileID: 1391956202, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
-  weaponPrices: 
+  weaponPrices: 1e0000004600000082000000c80000001301000090010000
   xpTable: 
   player: {fileID: 20277274}
+  weapon: {fileID: 1274812153}
   floatingTextManager: {fileID: 239593705}
   pesos: 0
   experience: 0
@@ -2816,7 +2817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 733302968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841207396}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnUpgradeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &733302968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5631,9 +5644,17 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damagePoint: 1
-  pushForce: 4
+  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  pushForce:
+  - 2
+  - 2.2
+  - 2.5
+  - 3
+  - 3.2
+  - 3.6
+  - 4
   weaponLevel: 0
+  spriteRenderer: {fileID: 1274812152}
 --- !u!61 &1274812154
 BoxCollider2D:
   m_ObjectHideFlags: 0
