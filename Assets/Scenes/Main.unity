@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ba557b59c39e244876942bf8fed7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
+  hitpoint: 5
+  maxHitpoint: 5
   pushRecoverySpeed: 0.2
 --- !u!212 &20277275
 SpriteRenderer:
@@ -2561,7 +2561,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b132ce6f687c648a5b8342b96cc333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprites: []
+  playerSprites:
+  - {fileID: -1149009888, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
+  - {fileID: -769952854, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   weaponSprites:
   - {fileID: 1664185756, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   - {fileID: 368675445, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
@@ -2571,7 +2573,7 @@ MonoBehaviour:
   - {fileID: -1443120277, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   - {fileID: 1391956202, guid: 92a341cb11b8ce4469a2eaca63ff468c, type: 3}
   weaponPrices: 1e0000004600000082000000c80000001301000090010000
-  xpTable: 
+  xpTable: 050000000a00000011000000190000001e0000002800000037000000460000005a00000078000000
   player: {fileID: 20277274}
   weapon: {fileID: 1274812153}
   floatingTextManager: {fileID: 239593705}
@@ -6158,7 +6160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1530440439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841207396}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1530440439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6412,7 +6426,7 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
-  xpValue: 1
+  xpValue: 10
   triggerLength: 0.3
   chaseLength: 1
   filter:
@@ -6911,7 +6925,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1930054689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 841207396}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1930054689
 MonoBehaviour:
   m_ObjectHideFlags: 0
